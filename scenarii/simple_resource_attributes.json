@@ -1,0 +1,10 @@
+{
+    "data": {
+        "id": "1",
+        "type": "articles",
+        "attributes": {
+            "title": "json:api",
+            "content": "I love it."
+        }
+    }
+}

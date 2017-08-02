@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'jsonapi/grader'
+
+grader = JSONAPI::Grader.new(ARGV[0])
+
+grader.grade
