@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Ensure compliance of your JSON API library."
   s.authors     = ["Lucas Hosseini"]
   s.email       = 'lucas.hosseini@gmail.com'
-  s.files       = ["lib/jsonapi/grader.rb", "scenarii.json"] +
+  s.files       = ["scenarii_serialization.json"] + Dir["./lib/**/*.rb"] +
                   Dir["./scenarii/*.json"]
   s.executables << 'jsonapi-grader'
   s.homepage    = 'https://github.com/beauby/jsonapi-grader'

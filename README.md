@@ -20,7 +20,7 @@ Then simply run the `jsonapi-grader` binary and provide it as an argument the di
 with your compliance executables:
 
 ```
-$ jsonapi-grader ./compliance
+$ jsonapi-grader serialization ./compliance
 Running scenario null_data... passed
 Running scenario empty_collection... passed
 Running scenario simple_resource... passed
@@ -33,4 +33,9 @@ Score: 420 / 420 (100.0%)
 
 ## Server libraries
 
-A compliance test suite for server libraries is in the making.
+```
+$ jsonapi-grader server http://example.com
+Running scenario empty_collection... passed
+Compliance: true
+Score: 100 / 100 (100.0%)
+```

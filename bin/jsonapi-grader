@@ -2,6 +2,15 @@
 
 require 'jsonapi/grader'
 
-grader = JSONAPI::Grader.new(ARGV[0])
+grader =
+  case ARGV[0]
+  when 'serialization'
+    JSONAPI::Grader::SerializationGrader.new('scenarii_serialization.json',
+                                             implementation_dir: ARGV[1])
+  when 'server'
+    JSONAPI::Grader::ServerGrader.new(host: ARGV[1])
+  else
+    raise 'Unknown arguments'
+  end
 
 grader.grade
