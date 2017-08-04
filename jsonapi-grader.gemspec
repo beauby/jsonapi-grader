@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jsonapi-grader'
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.date        = '2017-08-02'
   s.summary     = "Grade jsonapi.org implementations."
   s.description = "Ensure compliance of your JSON API library."
