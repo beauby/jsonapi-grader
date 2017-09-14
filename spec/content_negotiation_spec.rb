@@ -1,4 +1,4 @@
-RSpec.describe 'foo' do
+RSpec.describe 'content negotiation' do
   it 'responds with correct content type' do
     get '/books/1'
 

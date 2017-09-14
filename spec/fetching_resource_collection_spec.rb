@@ -1,4 +1,4 @@
-RSpec.describe 'Fetching a resource collection' do
+RSpec.describe 'fetching a resource collection' do
   it 'fetches a resource collection' do
     get '/books'
 

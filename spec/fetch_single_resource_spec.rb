@@ -1,4 +1,4 @@
-RSpec.describe 'Fetching a single resource' do
+RSpec.describe 'fetching a single resource' do
   it 'fetches a single resource' do
     get '/books/1'
 
