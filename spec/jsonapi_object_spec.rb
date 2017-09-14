@@ -1,4 +1,4 @@
-RSpec.describe 'foo' do
+RSpec.describe 'jsonapi object' do
   it 'has a top level jsonapi object in the response' do
     get '/books/1'
 
