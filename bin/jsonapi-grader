@@ -1,16 +1,10 @@
 #!/usr/bin/env ruby
 
-require 'jsonapi/grader'
+require 'bundler/setup'
+require 'rspec'
 
-grader =
-  case ARGV[0]
-  when 'serialization'
-    JSONAPI::Grader::SerializationGrader.new('scenarii_serialization.json',
-                                             implementation_dir: ARGV[1])
-  when 'server'
-    JSONAPI::Grader::ServerGrader.new(host: ARGV[1])
-  else
-    raise 'Unknown arguments'
-  end
+ENV['HOST'] = ARGV[0]
 
-grader.grade
+dir = File.expand_path(File.dirname(__FILE__)) + '/../spec/'
+
+RSpec::Core::Runner.run([dir], $stderr, $stdout)
