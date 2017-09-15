@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.email       = 'lucas.hosseini@gmail.com'
   s.files       = Dir["./spec/**/*.rb"]
   s.bindir      = 'bin'
+  s.executables << 'jsonapi-grader'
   s.homepage    = 'https://github.com/beauby/jsonapi-grader'
   s.license     = 'MIT'
 
