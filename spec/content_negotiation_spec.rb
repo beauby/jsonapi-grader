@@ -15,10 +15,10 @@ RSpec.describe 'content negotiation' do
   end
 
   context 'when requesting with media type parameters in accept' do
-    it 'responds with 412' do
+    it 'responds with 406' do
       get '/books/1', 'Accept' => 'application/vnd.api+json; foo=bar'
 
-      expect(response_status).to be 412
+      expect(response_status).to be 406
     end
   end
 end
