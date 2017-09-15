@@ -1,6 +1,8 @@
+version = File.read(File.expand_path('../VERSION', __FILE__)).strip
+
 Gem::Specification.new do |s|
   s.name        = 'jsonapi-grader'
-  s.version     = '0.1.0'
+  s.version     = version
   s.date        = '2017-08-02'
   s.summary     = "Grade jsonapi.org implementations."
   s.description = "Ensure compliance of your JSON API library."
